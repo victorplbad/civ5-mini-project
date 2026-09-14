@@ -1,0 +1,84 @@
+hex tile map (or sqar)
+
+diffendt tiles ::
+
+city
+grass
+plains
+*hill*
+mountain
+(snow)
+(thundra)
+(dessert)
+
+
+2d icons ::
+worker
+settler
+warrier
+bowmen
+* seige units (catapult)
+
+
+3D assets ::
+worker
+warrier
+bowmen
+settler
+* seige units (catapult)
+
+Buildings ::
+*
+*
+
+
+2d icons for Buildings ::
+*
+*
+
+unit mechanicns ::
+place city
+unit upgrading
+unit promoting
+unit movement
+unit figting unit
+unit terran buffs
+unit winning / dying
+unit capture civilien
+unit destroeying / pludering (tile)
+make improvements to tiles (builder + tile)
+* go into Water tile 
+* boat only in Water tiles
+* unit setting up (catapult)
+unit healing
+unit fortitfiying (itself)
+
+city mechanicns ::
+*water access
+food / pop grow
+production / build stuff
+border grow
+pop mangement
+* gather yeilds on tiles
+building bonus (farm gives more food)
+
+tile mechanicns ::
+*movement
+vison / vison blocking
+yeilds
+ressoruses (hill / woods / march)
+-bonus ressoruses 
+-luxery ressoruses 
+land / water (tiles)
+*rivers?
+
+map mechanicns ::
+rivers
+map / tile genertation
+landscape regions
+ressoruses destubruion 
+islands
+contients
+oceaen / coast / Water
+
+
