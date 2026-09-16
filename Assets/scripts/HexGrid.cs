@@ -21,7 +21,7 @@ public class HexGrid : MonoBehaviour
 	
 
     public Color defaultColor = Color.white;
-    public Color touchedColor = Color.magenta;
+    
 
     void Awake()
 	{
