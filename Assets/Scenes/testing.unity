@@ -730,6 +730,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5433303005404259550, guid: 91f977ea227a9da45b0920057cd51ea3, type: 3}
+      propertyPath: BoundaryMaxX
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433303005404259550, guid: 91f977ea227a9da45b0920057cd51ea3, type: 3}
+      propertyPath: BoundaryMaxZ
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433303005404259550, guid: 91f977ea227a9da45b0920057cd51ea3, type: 3}
+      propertyPath: BoundaryMinX
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433303005404259550, guid: 91f977ea227a9da45b0920057cd51ea3, type: 3}
+      propertyPath: BoundaryMinZ
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 7208503207582570876, guid: 91f977ea227a9da45b0920057cd51ea3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -778,6 +794,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27fa958b585dbb74f8938a3ffd26bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexCell
+  coordinates:
+    x: 0
+    z: 0
 --- !u!4 &4515010263185384317
 Transform:
   m_ObjectHideFlags: 0
