@@ -429,6 +429,8 @@ MonoBehaviour:
   height: 6
   cellPrefab: {fileID: 5447330545327693271, guid: 2d2d6d03247071b42af1d07caf1a44e3, type: 3}
   cellLabelPrefab: {fileID: 1583670604467817485, guid: c7e7daf7a34b4a548b38d740dd4559e3, type: 3}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  touchedColor: {r: 1, g: 0.33305168, b: 0, a: 1}
 --- !u!4 &868477015
 Transform:
   m_ObjectHideFlags: 0
@@ -797,6 +799,7 @@ MonoBehaviour:
   coordinates:
     x: 0
     z: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &4515010263185384317
 Transform:
   m_ObjectHideFlags: 0
