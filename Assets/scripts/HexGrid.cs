@@ -18,16 +18,14 @@ public class HexGrid : MonoBehaviour
 	
 	HexMesh hexMesh;
 
-	InputAction clickAction;
-	InputAction mousePosAction;
+	
 
     public Color defaultColor = Color.white;
     public Color touchedColor = Color.magenta;
 
     void Awake()
 	{
-        clickAction = InputSystem.actions.FindAction("Click");
-        mousePosAction = InputSystem.actions.FindAction("MousePos");
+        
 
         gridCanvas = GetComponentInChildren<Canvas>();
 		hexMesh = GetComponentInChildren<HexMesh>();
@@ -49,31 +47,15 @@ public class HexGrid : MonoBehaviour
 	}
 
 	
-    void Update()
-    {
-        if (clickAction.IsPressed())
-        {
-            HandleInput();
-        }
-    }
+    
 
-    void HandleInput()
-    {
-        Ray inputRay = Camera.main.ScreenPointToRay(mousePosAction.ReadValue<Vector2>());
-        RaycastHit hit;
-        if (Physics.Raycast(inputRay, out hit))
-        {
-            TouchCell(hit.point);
-        }
-    }
-
-    void TouchCell(Vector3 position)
+    public void ColorCell(Vector3 position, Color color)
     {
         position = transform.InverseTransformPoint(position);
         HexCoordinates coordinates = HexCoordinates.FromPosition(position);
         int index = coordinates.X + coordinates.Z * width + coordinates.Z / 2;
         HexCell cell = cells[index];
-        cell.color = touchedColor;
+        cell.color = color;
         hexMesh.Triangulate(cells);
     }
 
