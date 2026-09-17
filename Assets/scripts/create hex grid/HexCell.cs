@@ -6,5 +6,8 @@ public class HexCell : MonoBehaviour
 
     public Color color;
 
+    [SerializeField]
+    HexCell[] neighbors;
+
 
 }
