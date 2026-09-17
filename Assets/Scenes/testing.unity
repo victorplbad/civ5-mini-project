@@ -2309,29 +2309,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963238791}
   m_CullTransparentMesh: 1
---- !u!114 &2873722492611363916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5907671220856981514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27fa958b585dbb74f8938a3ffd26bc99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HexCell
-  coordinates:
-    x: 0
-    z: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &4515010263185384317
 Transform:
   m_ObjectHideFlags: 0
@@ -2356,7 +2333,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4515010263185384317}
-  - component: {fileID: 2873722492611363916}
   - component: {fileID: 5907671220856981517}
   - component: {fileID: 5907671220856981516}
   - component: {fileID: 5907671220856981515}
