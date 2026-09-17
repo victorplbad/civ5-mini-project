@@ -1993,7 +1993,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RTSCameraController_NewInputSystem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6937711202301983104, guid: 91f977ea227a9da45b0920057cd51ea3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
