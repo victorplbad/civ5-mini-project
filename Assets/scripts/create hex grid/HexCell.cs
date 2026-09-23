@@ -9,6 +9,8 @@ public class HexCell : MonoBehaviour
     [SerializeField]
     HexCell[] neighbors;
 
+    public RectTransform uiRect;
+
 
     public HexCell GetNeighbor(HexDirection direction)
     {

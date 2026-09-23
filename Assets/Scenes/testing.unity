@@ -846,11 +846,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c62cd0ae11a204582ab904292849d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexGrid
-  width: 20
-  height: 20
+  chunkCountX: 4
+  chunkCountZ: 3
   cellPrefab: {fileID: 5447330545327693271, guid: 2d2d6d03247071b42af1d07caf1a44e3, type: 3}
   cellLabelPrefab: {fileID: 1583670604467817485, guid: c7e7daf7a34b4a548b38d740dd4559e3, type: 3}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  chunkPrefab: {fileID: 4917027117606067082, guid: 67566a420f717834c8ea6b3253425dac, type: 3}
 --- !u!4 &868477015
 Transform:
   m_ObjectHideFlags: 0
