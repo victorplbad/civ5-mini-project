@@ -15,10 +15,6 @@ public class HexGrid : MonoBehaviour
 
 	public Text cellLabelPrefab;
 
-	Canvas gridCanvas;
-	
-	HexMesh hexMesh;
-
     public Color defaultColor = Color.white;
 
     public HexGridChunk chunkPrefab;
@@ -26,10 +22,6 @@ public class HexGrid : MonoBehaviour
 
     void Awake()
 	{
-        
-
-        gridCanvas = GetComponentInChildren<Canvas>();
-		hexMesh = GetComponentInChildren<HexMesh>();
 
         cellCountX = chunkCountX * HexMetrics.chunkSizeX;
         cellCountZ = chunkCountZ * HexMetrics.chunkSizeZ;
@@ -70,11 +62,6 @@ public class HexGrid : MonoBehaviour
 
 
 
-    void Start()
-	{
-		hexMesh.Triangulate(cells);
-	}
-
 
     public void ColorCell(Vector3 position, Color color)
     {
@@ -83,7 +70,7 @@ public class HexGrid : MonoBehaviour
         int index = coordinates.X + coordinates.Z * cellCountX + coordinates.Z / 2;
         HexCell cell = cells[index];
         cell.color = color;
-        hexMesh.Triangulate(cells);
+        
     }
 
 
