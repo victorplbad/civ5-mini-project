@@ -16,6 +16,14 @@ public class HexMapEditor : MonoBehaviour
     InputAction clickAction;
     InputAction mousePosAction;
 
+
+    public void SelectColor(int index)
+    {
+        activeColor = colors[index];
+    }
+
+
+
     void Awake()
     {
         clickAction = InputSystem.actions.FindAction("Click");
@@ -28,7 +36,6 @@ public class HexMapEditor : MonoBehaviour
     void Update()
     {
         if (clickAction.IsPressed() && !EventSystem.current.IsPointerOverGameObject())
-            
         {
             HandleInput();
         }
@@ -42,12 +49,14 @@ public class HexMapEditor : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(inputRay, out hit))
         {
-            hexGrid.ColorCell(hit.point, activeColor);
+            EditCell(hexGrid.GetCell(hit.point));
         }
     }
 
-    public void SelectColor(int index)
+    void EditCell(HexCell cell)
     {
-        activeColor = colors[index];
+        cell.Color = activeColor;
+        //cell.Elevation = activeElevation;
     }
+
 }
